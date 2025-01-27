@@ -73,9 +73,26 @@ main {
 
 
 .save-informations h2 {
-   text-align: center;
-   width: 100%;
-   position: relative;
+  position: absolute;
+  height: 100px;
+  width: 200px;
+  left: 166px;
+  bottom: 554px;
+  font-size: 51px;
+}
+
+.owned {
+    position: absolute;
+    font-size: 23px;
+    left: 172px;
+    bottom: 542px;
+}
+
+.seen {
+    position: absolute;
+    font-size: 23px;
+    left: 397px;
+    bottom: 542px;
 }
 
 .import-save-button:active {

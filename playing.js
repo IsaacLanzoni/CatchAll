@@ -47,7 +47,7 @@ function processFile() {
         alert('Por favor, selecione um arquivo.');
         return;
     }
-  }, 1200000);
+  }, 9000000);
 
   const reader = new FileReader();
   reader.onload = function(event) {
@@ -74,6 +74,7 @@ function processFile() {
           return pokemon ? pokemon.name : 'Pokémon desconhecido';
       }
 
+      const ownedPokemon = ownPokemon.length;
       const ownPokemonNames = ownPokemon.map(num => getPokemonNameByNumber(num));
       const seenPokemonNames = seenPokemon.map(num => getPokemonNameByNumber(num));
 
@@ -82,6 +83,8 @@ function processFile() {
 
       console.log('Pokémons Capturados:');
       ownPokemonNames.forEach(name => console.log(name));
+
+      console.log('Quantidade de pokémons capturados:', ownedPokemon);
   };
 
     while (!file){
