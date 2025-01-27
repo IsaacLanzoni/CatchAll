@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+:root {
+
+    --cor0: #7F9BB0;
+    --cor1: #79B1DB;
+    --cor2: #778087;
+    --cor3: #45525C;
+    --cor4: #1E2A33;
+    --cor5: #152633;
+
+    --main-font: 'Jost';
+    --secondary-font: Georgia, 'Times New Roman', Times, serif;
+}
+
+* {
+    margin: auto;
+}
+
+body {
+    background-color: var(--cor5);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 10;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.932);
+    width: 650px;
+    border-radius: 6px;
+    height: 400px;
+    padding: 12px;
+    margin: auto;
+    margin-top: 152px;
+    box-shadow: 0px 13px 4px rgba(0, 0, 0, 0.418);
+    font-family: var(--main-font, --secondary-font);
+}
+
+h1 {
+    margin-left: 80px;
+    margin-top: -40px;
+    font-size: 40px;
+}
+
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.little-balls {
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+    list-style-type: none;
+    border-radius: 50%;
+    transition: 0.5s all ease;
+}
+
+.little-balls:nth-child(1) {
+    background-color: #79B1DB;
+    animation: ball1 1s infinite alternate;
+    animation-delay: 100ms;
+
+}
+
+@keyframes ball1{
+    0%{
+        transform: translateY(-60px);
+    }
+    100%{
+        transform: translateY(50px);
+    }
+}
+
+.little-balls:nth-child(2) {
+    background-color: #4d81a9;
+    animation: ball2 1s infinite alternate;
+    animation-delay: 200ms;
+
+}
+
+@keyframes ball2{
+    0%{
+        transform: translateY(-70px);
+    }
+    100%{
+        transform: translateY(50px);
+    }
+}
+
+.little-balls:nth-child(3) {
+    background-color: #375c79;
+    animation: ball3 1s infinite alternate;
+    animation-delay: 300ms;
+
+}
+
+@keyframes ball3{
+    0%{
+        transform: translateY(-80px);
+    }
+    100%{
+        transform: translateY(50px);
+    }
+}
+
+.little-balls:nth-child(4) {
+    background-color: #274256;
+    animation: ball4 1s infinite alternate;
+    animation-delay: 400ms;
+
+}
+
+@keyframes ball4{
+    0%{
+        transform: translateY(-90px);
+    }
+    100%{
+        transform: translateY(50px);
+    }
+}
+
+.little-balls:nth-child(5) {
+    background-color: #223a4c;
+    animation: ball5 1s infinite alternate;
+    animation-delay: 500ms;
+
+}
+
+@keyframes ball5{
+    0%{
+        transform: translateY(-100px);
+    }
+    100%{
+        transform: translateY(50px);
+    }
+}

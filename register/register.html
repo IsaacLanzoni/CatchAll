@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <link rel="icon" href="../images/icon-0.ico" type="image/x-icon">
+    <title>Register</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <section class="centralize">
+                <div class="register-style-part">
+                    <h1>Registrar</h1>
+                    <div class="input-container">
+                        <input type="email" name="register-email-input" id="register-email-input" required placeholder=" "> 
+                        <label>Email a ser usado</label>
+                        <div class="error" id="email-required-error">Este campo precisa ser preenchido!</div>
+                        <div class="error" id="email-invalid-error">O email inserido não é válido!</div>
+                    </div>
+                    <div class="input-container">
+                        <input type="password" name="register-password-input" id="register-password-input" required placeholder=" ">
+                        <label for="register-password-input">Senha</label>
+                        <div class="error" id="password-required-error">Esse campo precisa ser preenchido!</div>
+                        <div class="caracter-error" id="password-invalid-error">Sua senha precisar ter mais de 6 caracteres!</div>
+                        <button type="button" id="show-password"><img  width="24px" src="../images/lock-alt-solid-24.png" alt="mostrar senha"></button>
+                    </div>
+                    <div class="input-container">
+                        <input type="password" name="register-password-input" id="register-confirm-password-input"  required placeholder=" ">
+                        <label for="register-confirm-password-input">Confirmar Senha</label>
+                        <div class="error" id="different-password-required-error">Esse campo precisa ser preenchido!</div>
+                        <div class="error" id="different-password-error">Suas senhas precisam ser iguais!</div>
+                        <button type="button" id="show-password-2"><img width="24px" src="../images/lock-alt-solid-24.png" alt="mostrar senha"></button>
+                    </div>
+                    <button id="register-button" onclick="onClickRegisterButton()">Registrar</button>
+                    <p>Já tem uma conta? <a id="login-link" href="#" onclick="onClickLoginBackButton()" target="_self" >Entrar</a></p>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/11.2.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/11.2.0/firebase-auth-compat.js"></script>
+<script src="../firebaseInit.js"></script>
+<script src="../loading.js"></script>
+<script src="register.js"></script>
+<script src="../validate.js"></script>
+
+</html>

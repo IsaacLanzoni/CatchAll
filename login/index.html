@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="../images/icon-0.ico" type="image/x-icon">
+    <title>Login</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <section class="centralize">
+                <div class="login-style-part">
+                    <h1>Login</h1>
+                    <div class="input-container">
+                        <input type="email" name="login-email-input" id="login-email-input" required placeholder=" "> 
+                        <label for="login-email-input">Email de Usuário</label>
+                        <div class="error" id="email-required-error">Este campo precisa ser preenchido!</div>
+                        <div class="error" id="email-invalid-error">O email usado não é válido!</div>
+                    </div>
+                    <div class="input-container">
+                        <input type="password" name="login-password-input" id="login-password-input" required placeholder=" ">
+                        <label for="login-password-input">Senha</label>
+                        <div class="error" id="password-required-error">Este campo precisa ser preenchido!</div>
+                        <button type="button" id="show-password"><img  width="24px" src="../images/lock-alt-solid-24.png" alt="mostrar senha"></button>
+                    </div>
+                    <button id="login-button" onclick="onClickEnterButton()">Entrar</button>
+                    <p>Não tem uma conta? <a id="register-link" href="#" onclick="onClickRegisterLink()" target="_self">Registrar</a></p>
+                    <p id="forgoted-password-paragraph">Não lembro a senha, <a id="forgoted-password" href="#" onclick="forgotMyPassword()" target="_self">Esqueci</a></p>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+
+    <script src="https://www.gstatic.com/firebasejs/11.2.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.2.0/firebase-auth-compat.js"></script>
+    <script src="../firebaseInit.js"></script>
+    <script src="../loading.js"></script>
+    <script src="index.js"></script>
+    <script src="../validate.js"></script>
+</html>

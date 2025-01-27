@@ -1,0 +1,189 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');  
+
+:root {
+
+    --cor0: #7F9BB0;
+    --cor1: #79B1DB;
+    --cor2: #778087;
+    --cor3: #45525C;
+    --cor4: #1E2A33 ;
+    --cor5: #152633;
+
+    --main-font: 'Jost';
+    --secondary-font: Georgia, 'Times New Roman', Times, serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(to top, var(--cor4), var(--cor5)90%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: var(--main-font), var(--secondary-font);
+}
+
+
+
+nav{
+    background-color: var(--cor3);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+main {
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.967);
+    height: 93vh;
+    max-width: 1300px;
+    width: 100%;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.import-save-button{
+    border: none;
+    background-color: gray;
+    width: 200px;
+    padding: 30px;
+    text-align: center;
+    max-width: 100%;
+    border-radius: 50px;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.777);
+    font-size: 16px;
+    transition: box-shadow 0.6 ease, transform ease 0.6;
+    display: none;
+}
+
+
+.save-informations h2 {
+   text-align: center;
+   width: 100%;
+   position: relative;
+}
+
+.import-save-button:active {
+    transform: scale(0.90);
+}
+
+.import-save-button:hover {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.777);
+    transition: all 0.5 ease;
+    cursor: pointer;
+}
+
+#fileInput, #file-save {
+    display: none;
+}
+
+button {
+    font-family: var(--main-font), var(--secondary-font);
+}
+
+@media(max-width: 768px) {
+    main {
+        width: 90%;
+        height: auto;
+    }
+
+    main button{
+        width: 150%;
+        padding: 20px;
+    }
+}
+
+@media(max-width: 480px){
+    main {
+        width: 100%;
+        height: auto;
+    }
+
+    main button {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+
+
+nav li{
+    height: 50px;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+nav a:hover{
+    background-color: #778087;
+    border-radius: 30px;
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(30, 42, 51, 0.115);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+    text-indent: 6px;
+}
+
+.menu-button {
+    display: none;
+}
+
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
