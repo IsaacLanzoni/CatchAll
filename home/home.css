@@ -51,7 +51,6 @@ main {
     max-width: 1300px;
     width: 100%;
     border-radius: 8px;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,20 +78,6 @@ main {
   left: 166px;
   bottom: 554px;
   font-size: 51px;
-}
-
-.owned {
-    position: absolute;
-    font-size: 23px;
-    left: 172px;
-    bottom: 542px;
-}
-
-.seen {
-    position: absolute;
-    font-size: 23px;
-    left: 397px;
-    bottom: 542px;
 }
 
 .import-save-button:active {
