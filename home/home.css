@@ -48,6 +48,7 @@ main {
     margin: auto;
     background-color: rgba(255, 255, 255, 0.967);
     height: 93vh;
+    position: relative;
     max-width: 1300px;
     width: 100%;
     border-radius: 8px;
@@ -67,7 +68,74 @@ main {
     box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.777);
     font-size: 16px;
     transition: box-shadow 0.6 ease, transform ease 0.6;
+    display: block;
+}
+
+.poke-container {
+    position: relative;
     display: none;
+}
+
+.texts h2{
+    position: relative;
+    font-size: 40px;
+    top: -237px;
+}
+
+.owned {
+    position: absolute;
+    font-size: 25px;
+    top: -173px;
+    left: -248px;
+}
+
+.owned-info {
+    position: fixed;
+    overflow-y: auto;
+    height: 300px;
+    width: 225px;
+}
+
+.owned-info img {
+    height: 75px;
+    width: 88px;
+    bottom: -8px;
+    left: -17px;
+    display: inline;
+    position: relative;
+}
+
+.owned-info h6 {
+    position: relative;
+    top: -26px;
+}
+
+.seen {
+    position: relative;
+    font-size: 25px;
+    top: -237px;
+    left: 314px;
+}
+
+.seen-info {
+    position: fixed;
+    overflow-y: auto;
+    height: 300px;
+    width: 225px;
+}
+
+.seen-info img {
+    height: 75px;
+    width: 88px;
+    bottom: -8px;
+    left: -17px;
+    display: inline;
+    position: relative;
+}
+
+.seen-info h6 {
+    position: relative;
+    top: -26px;
 }
 
 
